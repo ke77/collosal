@@ -1,0 +1,30 @@
+@use "custom" as *;
+
+// component files imports
+@use "components/buttons";
+@use "components/mixins" as *;
+
+// section files imports
+@use "sections/main-content";
+@use "sections/navbar";
+
+
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('/images/pexels-lucie-212-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    
+    #wrapper {
+        width: 100%;
+        min-height: 100vh;
+        height: 100vh;
+        color: #fff;
+        border: 2px solid green; 
+    }
+}
+
+

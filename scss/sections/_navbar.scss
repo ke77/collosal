@@ -1,0 +1,35 @@
+@use "../custom" as *;
+@use '../components/mixins' as *;
+
+
+
+
+nav {
+    .container {
+        .navbar-brand {
+            color: #fff;
+        }
+        
+        .navbar-nav {
+            a {
+                color: #fff;
+                
+            }
+
+            a:hover {
+                color: #bababa;
+            }
+        }
+
+        .btn {
+            border: none;
+            border-radius: 3px;
+            background: transparent;
+            width: 8rem;
+            height: 3rem;
+            outline: none;
+            @include blur;
+        }
+    }
+}
+    

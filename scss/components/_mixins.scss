@@ -1,0 +1,14 @@
+@use "../custom" as *;
+
+
+@mixin blur {
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+
+
+@mixin boxShadow {
+    box-shadow: 0 13px 32px 1px rgba(0, 0, 0, 0.596);
+}
