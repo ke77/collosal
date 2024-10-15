@@ -14,19 +14,25 @@
 
 */
 
-.cta-one, .cta-two {
+.cta-one,
+.cta-two {
     background: transparent;
     color: $c--primary;
     width: 10rem;
     height: 2.7rem;
+    @include buttonStyling;
     @include blur;
+}
+
+.cta-two:hover {
+    @include buttonHover;
 }
 
 .cta-one {
     background-color: $c--secondary;
     margin-right: 1.3rem;
-
-
+    
+    
     &:hover {
         background-color: $c--secondary-dark;
     }

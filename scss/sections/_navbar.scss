@@ -27,7 +27,13 @@ nav {
             background: transparent;
             width: 8rem;
             height: 2.8rem;
+            @include buttonStyling;
             @include blur;
+
+            &:hover {
+                @include buttonHover;
+                transition: all .3s ease-in;
+            }
         }
     }
 }

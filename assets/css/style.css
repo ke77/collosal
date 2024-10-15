@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -201,7 +202,6 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11853,19 +11853,25 @@ textarea.form-control-lg {
     }
 
 */
-.cta-one, .cta-two {
+.cta-one,
+.cta-two {
   background: transparent;
   color: #fff;
   width: 10rem;
   height: 2.7rem;
-  -webkit-backdrop-filter: blur(18px);
-  backdrop-filter: blur(18px);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 0.89rem;
   outline: none;
   letter-spacing: 0.3px;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.cta-two:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  transition: all 0.13s ease-in;
 }
 
 .cta-one {
@@ -11885,28 +11891,29 @@ main .container .titles h6 {
   letter-spacing: 0.9px;
   padding-top: 1rem;
 }
+main .container .titles h2 {
+  font-size: 2.7rem;
+}
 main .container .description-and-buttons p {
-  font-size: 0.84rem;
+  font-size: 0.894rem;
   width: 43%;
   color: rgba(193, 193, 193, 0.8823529412);
+  letter-spacing: 0.24px;
 }
 main .container .services .service-box {
   padding: 0 2rem;
-  width: 32%;
+  width: 31.5%;
   height: 25%;
+  border-radius: 1.4%;
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-  border: none;
-  border-radius: 2px;
-  font-size: 0.89rem;
-  outline: none;
-  letter-spacing: 0.3px;
 }
 main .container .services .service-box .icon {
   width: 19%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
-  padding: 0.84rem 0;
+  padding: 0.8rem 0;
+  border-radius: 7%;
 }
 main .container .services .service-box .icon i {
   font-size: 1.33rem;
@@ -11917,9 +11924,47 @@ main .container .services .service-box .service-content {
 main .container .services .service-box .service-content p {
   color: rgba(193, 193, 193, 0.8823529412);
   font-size: 0.8rem;
+  letter-spacing: 0.4px;
 }
 main .container .company-logos {
-  height: 15%;
+  color: rgba(193, 193, 193, 0.631372549);
+  width: 101.2%;
+  margin: 0 auto;
+}
+main .container .company-logos::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1px;
+  background-color: rgba(193, 193, 193, 0.4941176471);
+}
+main .container .company-logos::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1px;
+  background-color: rgba(193, 193, 193, 0.4941176471);
+  margin-bottom: 4rem;
+}
+main .container .company-logos .container {
+  width: 100%;
+}
+main .container .company-logos .container .row .logo-container .forbes {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+main .container .company-logos .container .row .logo-container .github {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans";
+}
+main .container .company-logos .container .row .logo-container .google {
+  font-family: Lato;
+}
+main .container .company-logos .container .row .logo-container .microsoft {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .container .company-logos .container .row .logo-container .facebook {
+  font-family: Poppins;
 }
 
 nav {
@@ -11938,14 +11983,19 @@ nav .container .contact {
   background: transparent;
   width: 8rem;
   height: 2.8rem;
-  -webkit-backdrop-filter: blur(18px);
-  backdrop-filter: blur(18px);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 0.89rem;
   outline: none;
   letter-spacing: 0.3px;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+nav .container .contact:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  transition: all 0.13s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body {

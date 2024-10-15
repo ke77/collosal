@@ -16,6 +16,10 @@ main {
                     letter-spacing: .9px;
                     padding-top: 1rem;
                 }
+
+                h2 {
+                    font-size: 2.7rem;
+                }
                 
             }
 
@@ -24,9 +28,10 @@ main {
 
                 
                 p {
-                    font-size: .84rem;
+                    font-size: .894rem;
                     width: 43%;
                     color: #c1c1c1e1;
+                    letter-spacing: .24px;
                 }
         }
         
@@ -34,17 +39,19 @@ main {
         .services {            
             .service-box {
                 padding: 0 2rem;
-                width: 32%;
+                width: 31.5%;
                 height: 25%;
+                border-radius: 1.4%;
                 @include blur;
-
-
+                
+                
                 .icon {
                     width: 19%;
                     background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
-                    padding: .84rem 0;
+                    padding: .8rem 0;
+                    border-radius: 7%;
                     
-
+                    
                     i {
                         font-size: 1.33rem;
                     }
@@ -57,6 +64,7 @@ main {
                     p {
                         color: #c1c1c1e1;
                         font-size: .8rem;
+                        letter-spacing: .4px;
                     }
                 }
             }
@@ -64,7 +72,59 @@ main {
 
 
         .company-logos {
-            height: 15%;
+            color: #c1c1c1a1;
+            width: 101.2%;
+            margin: 0 auto;
+            
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: .1px;
+                background-color: #c1c1c17e;
+            }
+
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: .1px;
+                background-color: #c1c1c17e;
+                margin-bottom: 4rem;
+            }
+
+            
+
+            .container {
+                width: 100%;
+                .row {
+                    .logo-container {
+
+                        .forbes {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-weight: 600;
+                        }
+
+                        .github {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-family: 'Open Sans';
+                        }
+
+                        .google {
+                            font-family: Lato;
+                        }
+
+                        .microsoft {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        }
+
+                        .facebook {
+                            font-family: Poppins;
+                        }
+                    }
+                }
+            }
         }
     }
 }
