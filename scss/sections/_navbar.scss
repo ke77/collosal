@@ -10,12 +10,14 @@ nav {
     .container {
         .navbar-brand {
             color: $c--primary;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: .4px;
         }
+
         
         .navbar-nav {
             a {
                 color: #cccccc;
-                
             }
 
             a:hover {
@@ -34,6 +36,8 @@ nav {
                 @include buttonHover;
                 transition: all .3s ease-in;
             }
+
+            
         }
     }
 }

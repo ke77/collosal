@@ -19,9 +19,9 @@
     background: transparent;
     color: $c--primary;
     width: 10rem;
-    height: 2.7rem;
     @include buttonStyling;
     @include blur;
+    height: 2.7rem;
 }
 
 .cta-two:hover {

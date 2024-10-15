@@ -3,8 +3,6 @@
 
 
 main {
-
-
     .container {
         width: 85%;        
 
@@ -18,35 +16,38 @@ main {
                 }
 
                 h2 {
-                    font-size: 2.7rem;
+                    font-size: 2.5rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
                 
             }
 
 
             .description-and-buttons {
-
-                
                 p {
-                    font-size: .894rem;
-                    width: 43%;
+                    font-family: Poppins;
+                    font-size: .88rem;
+                    max-width: 57%;
+                    width: 59%;
                     color: #c1c1c1e1;
                     letter-spacing: .24px;
+
+                    
                 }
         }
         
 
         .services {            
             .service-box {
-                padding: 0 2rem;
-                width: 31.5%;
+                padding: 0 2.4rem;
+                width: 31.1%;
                 height: 25%;
                 border-radius: 1.4%;
                 @include blur;
                 
                 
                 .icon {
-                    width: 19%;
+                    width: 19.4%;
                     background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
                     padding: .8rem 0;
                     border-radius: 7%;
@@ -72,7 +73,7 @@ main {
 
 
         .company-logos {
-            color: #c1c1c1a1;
+            color: #c1c1c1e0;
             width: 101.2%;
             margin: 0 auto;
             
@@ -81,7 +82,7 @@ main {
                 display: block;
                 width: 100%;
                 height: .1px;
-                background-color: #c1c1c17e;
+                background-color: #58585875;
             }
 
 
@@ -90,7 +91,7 @@ main {
                 display: block;
                 width: 100%;
                 height: .1px;
-                background-color: #c1c1c17e;
+                background-color: #58585875;
                 margin-bottom: 4rem;
             }
 
@@ -98,9 +99,9 @@ main {
 
             .container {
                 width: 100%;
+
                 .row {
                     .logo-container {
-
                         .forbes {
                             font-family: 'Times New Roman', Times, serif;
                             font-weight: 600;

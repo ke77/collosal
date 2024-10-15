@@ -14,11 +14,13 @@
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('/images/pexels-lucie-212-min.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .87), rgba(0, 0, 0, .87), rgba(0, 0, 0, .9)), url('/images/food.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(27px);
+    backdrop-filter: blur(27px);
+
+
     
     #wrapper {
         width: 100%;
