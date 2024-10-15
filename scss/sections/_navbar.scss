@@ -5,29 +5,28 @@
 
 
 nav {
+    width: 85%;
+    
     .container {
         .navbar-brand {
-            color: #fff;
+            color: $c--primary;
         }
         
         .navbar-nav {
             a {
-                color: #fff;
+                color: #cccccc;
                 
             }
 
             a:hover {
-                color: #bababa;
+                color: $c--primary;
             }
         }
 
-        .btn {
-            border: none;
-            border-radius: 3px;
+        .contact {
             background: transparent;
             width: 8rem;
-            height: 3rem;
-            outline: none;
+            height: 2.8rem;
             @include blur;
         }
     }

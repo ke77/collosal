@@ -11851,41 +11851,113 @@ textarea.form-control-lg {
         height: 3rem;
 
     }
+
 */
+.cta-one, .cta-two {
+  background: transparent;
+  color: #fff;
+  width: 10rem;
+  height: 2.7rem;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: none;
+  border-radius: 2px;
+  font-size: 0.89rem;
+  outline: none;
+  letter-spacing: 0.3px;
+}
+
+.cta-one {
+  background-color: #7300ff;
+  margin-right: 1.3rem;
+}
+.cta-one:hover {
+  background-color: #6000d6;
+}
+
+main .container {
+  width: 85%;
+}
+main .container .titles h6 {
+  color: #00b9c2;
+  font-size: 0.9rem;
+  letter-spacing: 0.9px;
+  padding-top: 1rem;
+}
+main .container .description-and-buttons p {
+  font-size: 0.84rem;
+  width: 43%;
+  color: rgba(193, 193, 193, 0.8823529412);
+}
+main .container .services .service-box {
+  padding: 0 2rem;
+  width: 32%;
+  height: 25%;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: none;
+  border-radius: 2px;
+  font-size: 0.89rem;
+  outline: none;
+  letter-spacing: 0.3px;
+}
+main .container .services .service-box .icon {
+  width: 19%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
+  padding: 0.84rem 0;
+}
+main .container .services .service-box .icon i {
+  font-size: 1.33rem;
+}
+main .container .services .service-box .service-content {
+  height: 45%;
+}
+main .container .services .service-box .service-content p {
+  color: rgba(193, 193, 193, 0.8823529412);
+  font-size: 0.8rem;
+}
+main .container .company-logos {
+  height: 15%;
+}
+
+nav {
+  width: 85%;
+}
 nav .container .navbar-brand {
   color: #fff;
 }
 nav .container .navbar-nav a {
-  color: #fff;
+  color: #cccccc;
 }
 nav .container .navbar-nav a:hover {
-  color: #bababa;
+  color: #fff;
 }
-nav .container .btn {
-  border: none;
-  border-radius: 3px;
+nav .container .contact {
   background: transparent;
   width: 8rem;
-  height: 3rem;
-  outline: none;
+  height: 2.8rem;
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: none;
+  border-radius: 2px;
+  font-size: 0.89rem;
+  outline: none;
+  letter-spacing: 0.3px;
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("/images/pexels-lucie-212-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/pexels-lucie-212-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 body #wrapper {
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
   color: #fff;
-  border: 2px solid green;
 }
 
 /*# sourceMappingURL=style.css.map */

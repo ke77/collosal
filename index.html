@@ -6,14 +6,15 @@
     <title>Collosal Landing Page</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     
 
-    <div id="wrapper" class="wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
+    <div id="wrapper" class="wrapper min-vh-100 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg pt-4 mx-auto">
+            <div class="container ps-0 pe-0">
+                <a class="navbar-brand fw-bold" href="#">
                     <!-- <img src="images/logo.png" alt="" srcset=""> -->
                     Collosal
                 </a>
@@ -22,10 +23,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Services</a>
-                        <a class="nav-link" href="#">How We Work</a>
-                        <a class="nav-link" href="#">Projects</a>
-                        <a class="nav-link" href="#">About</a> 
+                        <a class="nav-link px-3" aria-current="page" href="#">Services</a>
+                        <a class="nav-link px-3" href="#">How We Work</a>
+                        <a class="nav-link px-3" href="#">Projects</a>
+                        <a class="nav-link px-3" href="#">About</a> 
                     </div>
                 </div>
                 <button class="btn btn-primary contact">
@@ -35,7 +36,75 @@
         </nav>
 
 
+        <!-- main section -->
+        <main>
+            <div class="container text-center">
+                <section class="row titles pt-3">
+                    <h6 class="text-uppercase align-items-end">Client-Development Driven</h6>
+
+                    <h2>
+                        We Design. We Develop. We Ship. 
+                        <span class="d-block">In The Same Day.</span> 
+                    </h2>
+                </section>
+
+                <section class="row justify-content-center description-and-buttons pt-3 pb-4">
+                    <p class="col-sm-12 w-sm-100 lh-lg">
+                        We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.
+                    </p>
+
+                    <div class="row cta-buttons justify-content-center pt-3">
+                        <button type="button" class="cta-one">Send Quote</button>
+                        <button type="button" class="cta-two">Learn More</button>
+                    </div>
+                </section>
+
+                <!-- services -->
+                <section class="row boxes services d-flex justify-content-between mt-5" id="services">
+                        <div class="col-md-6 col-sm-12 pt-5 pb-4 text-start service-box">
+                            <div class="icon text-center">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="service-content pt-4">
+                                <h3>Design</h3>
+                                <p class="pt-2">
+                                    The project interface will be designed first. Our favourite tool is figma.
+                                </p>
+                            </div>
+                        </div>
     
+                        <div class="col-md-6 col-sm-12 pt-5 pb-4 text-start service-box">
+                            <div class="icon text-center">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="service-content pt-4">
+                                <h3>Develop</h3>
+                                <p class="pt-2">
+                                    Transform design and write business logic here. Choose the technology you want.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-sm-12 pt-5 pb-4 text-start service-box">
+                            <div class="icon text-center">
+                                <i class="far fa-cube"></i>
+                            </div>
+                            <div class="service-content pt-4">
+                                <h3>Ship</h3>
+                                <p class="pt-2">
+                                    After the work is complete, we will send the project and its assets to you.
+                                </p>
+                            </div>
+                        </div>
+                </section>
+
+
+                <!-- company logos -->
+                <section class="company-logos">
+                    
+                </section>
+            </div>
+        </main>
     </div>
 
 

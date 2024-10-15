@@ -1,2 +1,70 @@
 @use "../custom" as *;
 @use '../components/mixins' as *;
+
+
+main {
+
+
+    .container {
+        width: 85%;        
+
+            .titles {
+                
+                h6 {
+                    color: $c--tertiary;
+                    font-size: .9rem;
+                    letter-spacing: .9px;
+                    padding-top: 1rem;
+                }
+                
+            }
+
+
+            .description-and-buttons {
+
+                
+                p {
+                    font-size: .84rem;
+                    width: 43%;
+                    color: #c1c1c1e1;
+                }
+        }
+        
+
+        .services {            
+            .service-box {
+                padding: 0 2rem;
+                width: 32%;
+                height: 25%;
+                @include blur;
+
+
+                .icon {
+                    width: 19%;
+                    background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
+                    padding: .84rem 0;
+                    
+
+                    i {
+                        font-size: 1.33rem;
+                    }
+                }
+
+
+                .service-content {
+                    height: 45%;
+                    
+                    p {
+                        color: #c1c1c1e1;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+
+        .company-logos {
+            height: 15%;
+        }
+    }
+}

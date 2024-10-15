@@ -15,8 +15,12 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+$cyan: #00b9c2;
+$darker-indigo: #6000d6;
 
 
 // theme colours
-$primary:       #7300ff;
-$secondary:       #00b9c2;
+$c--primary:       $white;
+$c--secondary:       #7300ff;
+$c--secondary-dark:     $darker-indigo;
+$c--tertiary:       $cyan;
