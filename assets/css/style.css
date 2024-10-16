@@ -11883,25 +11883,37 @@ textarea.form-control-lg {
   background-color: #6000d6;
 }
 
-main .container {
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.9)), url("/images/food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(27px);
+  backdrop-filter: blur(27px);
+}
+body #wrapper {
+  width: 100%;
+  color: #fff;
+}
+body #wrapper main .container {
   width: 85%;
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
 }
-main .container .titles h6 {
+body #wrapper main .container .titles h6 {
   color: #00b9c2;
   font-size: 0.9rem;
   letter-spacing: 0.9px;
   padding-top: 1rem;
 }
-main .container .titles h2 {
+body #wrapper main .container .titles h2 {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 3.5rem;
 }
-main .container .description-and-buttons p {
+body #wrapper main .container .description-and-buttons p {
   font-size: 0.897rem;
   max-width: 59%;
   width: 59%;
@@ -11910,30 +11922,30 @@ main .container .description-and-buttons p {
   text-wrap: wrap;
 }
 @media (max-width: 991.98px) {
-  main .container .description-and-buttons p {
+  body #wrapper main .container .description-and-buttons p {
     width: 95%;
     min-width: 95%;
     font-size: 0.9rem;
   }
 }
 @media (max-width: 767.98px) {
-  main .container .description-and-buttons .cta-buttons {
+  body #wrapper main .container .description-and-buttons .cta-buttons {
     margin: 0 auto;
   }
 }
 @media (max-width: 575.98px) {
-  main .container .description-and-buttons .cta-buttons .cta-one, main .container .description-and-buttons .cta-buttons .cta-two {
+  body #wrapper main .container .description-and-buttons .cta-buttons .cta-one, body #wrapper main .container .description-and-buttons .cta-buttons .cta-two {
     width: 80%;
     display: block;
     margin: 0 auto 0.8rem;
   }
 }
-main .container .services {
+body #wrapper main .container .services {
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
 }
-main .container .services .service-box {
+body #wrapper main .container .services .service-box {
   width: 31%;
   padding: 0 2.34rem;
   border-radius: 1.4%;
@@ -11943,38 +11955,38 @@ main .container .services .service-box {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
 }
 @media (max-width: 991.98px) {
-  main .container .services .service-box {
+  body #wrapper main .container .services .service-box {
     width: 70%;
   }
 }
 @media (max-width: 575.98px) {
-  main .container .services .service-box {
+  body #wrapper main .container .services .service-box {
     width: 100%;
     margin-bottom: 2rem;
     margin: 0 auto 2rem;
   }
 }
-main .container .services .service-box .icon {
+body #wrapper main .container .services .service-box .icon {
   width: 19.7%;
   min-width: 19.7%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
   padding: 0.7rem 0;
   border-radius: 7%;
 }
-main .container .services .service-box .icon i {
+body #wrapper main .container .services .service-box .icon i {
   font-size: 1.33rem;
 }
-main .container .services .service-box .service-content p {
+body #wrapper main .container .services .service-box .service-content p {
   color: rgba(193, 193, 193, 0.8823529412);
   font-size: 0.86rem;
   letter-spacing: 0.4px;
 }
-main .container .company-logos {
+body #wrapper main .container .company-logos {
   width: 100%;
   color: rgba(193, 193, 193, 0.8784313725);
   margin: 0 auto;
 }
-main .container .company-logos::before {
+body #wrapper main .container .company-logos::before {
   content: "";
   display: block;
   width: 100%;
@@ -11982,32 +11994,31 @@ main .container .company-logos::before {
   background-color: rgba(88, 88, 88, 0.7333333333);
   margin-bottom: 0.7rem;
 }
-main .container .company-logos::after {
+body #wrapper main .container .company-logos::after {
   content: "";
   display: block;
   width: 100%;
   height: 0.1px;
-  margin: 0 auto 7rem;
   background-color: rgba(88, 88, 88, 0.7333333333);
-  margin-top: 0.5rem;
+  margin: 0.5rem auto 7rem;
 }
-main .container .company-logos .container {
+body #wrapper main .container .company-logos .container {
   width: 100%;
 }
-main .container .company-logos .container .row .logo-container .forbes {
+body #wrapper main .container .company-logos .container .row .logo-container .forbes {
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
 }
-main .container .company-logos .container .row .logo-container .github {
+body #wrapper main .container .company-logos .container .row .logo-container .github {
   font-family: Arial, Helvetica, sans-serif;
 }
-main .container .company-logos .container .row .logo-container .google {
+body #wrapper main .container .company-logos .container .row .logo-container .google {
   font-family: Lato;
 }
-main .container .company-logos .container .row .logo-container .microsoft {
+body #wrapper main .container .company-logos .container .row .logo-container .microsoft {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-main .container .company-logos .container .row .logo-container .facebook {
+body #wrapper main .container .company-logos .container .row .logo-container .facebook {
   font-family: Poppins;
 }
 
@@ -12065,19 +12076,6 @@ nav .container .contact:hover {
   nav .container .contact {
     display: none;
   }
-}
-
-body {
-  font-family: sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.9)), url("/images/food.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(27px);
-  backdrop-filter: blur(27px);
-}
-body #wrapper {
-  width: 100%;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,169 +2,192 @@
 @use '../components/mixins' as *;
 
 
-main {
-    .container {
-        width: 85%;    
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0 auto;
 
-            .titles {
+
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, .87), rgba(0, 0, 0, .87), rgba(0, 0, 0, .9)), url('/images/food.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(27px);
+    backdrop-filter: blur(27px);
+
+
+    
+    #wrapper {
+        width: 100%;
+        color: #fff;
+
+
                 
-                h6 {
-                    color: $c--tertiary;
-                    font-size: .9rem;
-                    letter-spacing: .9px;
-                    padding-top: 1rem;
-                }
-
-                h2 {
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size: 2.4rem;
-                    line-height: 3.5rem;
-                }
-                
-            }
-
-
-            .description-and-buttons { 
-
-                p {
-                    font-size: .897rem;
-                    max-width: 59%;
-                    width: 59%;
-                    color: #c1c1c1e1;
-                    letter-spacing: .24px;
-                    text-wrap: wrap;
-
-                    @include media-breakpoint-down(lg) {
-                        width: 95%;
-                        min-width: 95%;
-                        font-size: .9rem;
-                    }
-                }
-
-                .cta-buttons {
-                    @include media-breakpoint-down(md) {
-                        margin: 0 auto;
-                    }
-
-                    .cta-one, .cta-two {
-                        @include media-breakpoint-down(sm) {
-                            width: 80%;
-                            display: block;
-                            margin: 0 auto .8rem;
-                        }
-                    }
-                }
-            }
-        
-
-        .services {  
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0 auto;
-            
-            .service-box {   
-                width: 31%;
-                padding: 0 2.34rem;
-                border-radius: 1.4%;
-                margin: 0 auto;
-                @include blur;
-
-                @include media-breakpoint-down(lg) {
-                    width: 70%;
-                }
-
-                @include media-breakpoint-down(sm) {
-                    width: 100%;
-                    margin-bottom: 2rem;
-                    margin: 0 auto 2rem;
-                }
-                
-                
-                .icon {
-                    width: 19.7%;
-                    min-width: 19.7%;
-                    background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
-                    padding: .7rem 0;
-                    border-radius: 7%;
-                    
-                    i {
-                        font-size: 1.33rem;
-                    }
-                }
-
-
-                .service-content {                    
-                    p {
-                        color: #c1c1c1e1;
-                        font-size: .86rem;
-                        letter-spacing: .4px;
-                    }
-                }
-            }
-        }
-
-
-        .company-logos {
-            width: 100%;
-            color: #c1c1c1e0;
-            margin: 0 auto;
-            
-            &::before {
-                content: '';
-                display: block;
-                width: 100%;
-                height: .1px;
-                background-color: #585858bb;
-                margin-bottom: .7rem;
-            }
-            
-            
-            &::after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: .1px;
-                margin: 0 auto 7rem;
-                background-color: #585858bb;
-                margin-top: .5rem;
-            }
-
-            
-
+        main {
             .container {
-                width: 100%;
+                width: 85%;    
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0 auto;
 
-                .row {
-                    .logo-container {
+                    .titles {
+                        
+                        h6 {
+                            color: $c--tertiary;
+                            font-size: .9rem;
+                            letter-spacing: .9px;
+                            padding-top: 1rem;
+                        }
+
+                        h2 {
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            font-size: 2.4rem;
+                            line-height: 3.5rem;
+                        }
+                        
+                    }
+
+
+                    .description-and-buttons { 
+
+                        p {
+                            font-size: .897rem;
+                            max-width: 59%;
+                            width: 59%;
+                            color: #c1c1c1e1;
+                            letter-spacing: .24px;
+                            text-wrap: wrap;
+
+                            @include media-breakpoint-down(lg) {
+                                width: 95%;
+                                min-width: 95%;
+                                font-size: .9rem;
+                            }
+                        }
+
+                        .cta-buttons {
+                            @include media-breakpoint-down(md) {
+                                margin: 0 auto;
+                            }
+
+                            .cta-one, .cta-two {
+                                @include media-breakpoint-down(sm) {
+                                    width: 80%;
+                                    display: block;
+                                    margin: 0 auto .8rem;
+                                }
+                            }
+                        }
+                    }
                 
 
-                        .forbes {
-                            font-family: 'Times New Roman', Times, serif;
-                            font-weight: 600;
+                .services {  
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0 auto;
+                    
+                    .service-box {   
+                        width: 31%;
+                        padding: 0 2.34rem;
+                        border-radius: 1.4%;
+                        margin: 0 auto;
+                        @include blur;
+
+                        @include media-breakpoint-down(lg) {
+                            width: 70%;
                         }
 
-                        .github {
-                            font-family: Arial, Helvetica, sans-serif;
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                            margin-bottom: 2rem;
+                            margin: 0 auto 2rem;
+                        }
+                        
+                        
+                        .icon {
+                            width: 19.7%;
+                            min-width: 19.7%;
+                            background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
+                            padding: .7rem 0;
+                            border-radius: 7%;
+                            
+                            i {
+                                font-size: 1.33rem;
+                            }
                         }
 
-                        .google {
-                            font-family: Lato;
-                        }
 
-                        .microsoft {
-                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        .service-content {                    
+                            p {
+                                color: #c1c1c1e1;
+                                font-size: .86rem;
+                                letter-spacing: .4px;
+                            }
                         }
+                    }
+                }
 
-                        .facebook {
-                            font-family: Poppins;
+
+                .company-logos {
+                    width: 100%;
+                    color: #c1c1c1e0;
+                    margin: 0 auto;
+                    
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: .1px;
+                        background-color: #585858bb;
+                        margin-bottom: .7rem;
+                    }
+                    
+                    
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: .1px;
+                        background-color: #585858bb;
+                        margin: .5rem auto 7rem;
+                    }
+
+                    
+
+                    .container {
+                        width: 100%;
+
+                        .row {
+                            .logo-container {
+                        
+
+                                .forbes {
+                                    font-family: 'Times New Roman', Times, serif;
+                                    font-weight: 600;
+                                }
+
+                                .github {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+
+                                .google {
+                                    font-family: Lato;
+                                }
+
+                                .microsoft {
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                }
+
+                                .facebook {
+                                    font-family: Poppins;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+
     }
 }
+
+
