@@ -11872,6 +11872,7 @@ textarea.form-control-lg {
 .cta-two:hover {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   transition: all 0.13s ease-in;
+  transition: all 0.7s ease-in;
 }
 
 .cta-one {
@@ -11884,6 +11885,9 @@ textarea.form-control-lg {
 
 main .container {
   width: 85%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
 }
 main .container .titles h6 {
   color: #00b9c2;
@@ -11892,46 +11896,83 @@ main .container .titles h6 {
   padding-top: 1rem;
 }
 main .container .titles h2 {
-  font-size: 2.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
 }
 main .container .description-and-buttons p {
-  font-family: Poppins;
-  font-size: 0.88rem;
-  max-width: 57%;
+  font-size: 0.897rem;
+  max-width: 59%;
   width: 59%;
   color: rgba(193, 193, 193, 0.8823529412);
   letter-spacing: 0.24px;
+  text-wrap: wrap;
+}
+@media (max-width: 991.98px) {
+  main .container .description-and-buttons p {
+    width: 95%;
+    min-width: 95%;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767.98px) {
+  main .container .description-and-buttons .cta-buttons {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 575.98px) {
+  main .container .description-and-buttons .cta-buttons .cta-one, main .container .description-and-buttons .cta-buttons .cta-two {
+    width: 80%;
+    display: block;
+    margin: 0 auto 0.8rem;
+  }
+}
+main .container .services {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  border: 2px solid yellow;
 }
 main .container .services .service-box {
-  padding: 0 2.4rem;
-  width: 31.1%;
-  height: 25%;
+  width: 31%;
+  padding: 0 2.34rem;
   border-radius: 1.4%;
+  margin: 0 auto;
   -webkit-backdrop-filter: blur(19px);
   backdrop-filter: blur(19px);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
 }
+@media (max-width: 991.98px) {
+  main .container .services .service-box {
+    width: 70%;
+  }
+}
+@media (max-width: 575.98px) {
+  main .container .services .service-box {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin: 0 auto 2rem 0;
+  }
+}
 main .container .services .service-box .icon {
-  width: 19.4%;
+  width: 19.7%;
+  min-width: 19.7%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.055));
-  padding: 0.8rem 0;
+  padding: 0.7rem 0;
   border-radius: 7%;
 }
 main .container .services .service-box .icon i {
   font-size: 1.33rem;
 }
-main .container .services .service-box .service-content {
-  height: 45%;
-}
 main .container .services .service-box .service-content p {
   color: rgba(193, 193, 193, 0.8823529412);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   letter-spacing: 0.4px;
 }
 main .container .company-logos {
+  width: 100%;
   color: rgba(193, 193, 193, 0.8784313725);
-  width: 101.2%;
   margin: 0 auto;
 }
 main .container .company-logos::before {
@@ -11939,15 +11980,17 @@ main .container .company-logos::before {
   display: block;
   width: 100%;
   height: 0.1px;
-  background-color: rgba(88, 88, 88, 0.4588235294);
+  background-color: rgba(88, 88, 88, 0.7333333333);
+  margin-bottom: 0.7rem;
 }
 main .container .company-logos::after {
   content: "";
   display: block;
   width: 100%;
   height: 0.1px;
-  background-color: rgba(88, 88, 88, 0.4588235294);
-  margin-bottom: 4rem;
+  margin: 0 auto 7rem;
+  background-color: rgba(88, 88, 88, 0.7333333333);
+  margin-top: 0.5rem;
 }
 main .container .company-logos .container {
   width: 100%;
@@ -11958,7 +12001,6 @@ main .container .company-logos .container .row .logo-container .forbes {
 }
 main .container .company-logos .container .row .logo-container .github {
   font-family: Arial, Helvetica, sans-serif;
-  font-family: "Open Sans";
 }
 main .container .company-logos .container .row .logo-container .google {
   font-family: Lato;
@@ -11978,11 +12020,30 @@ nav .container .navbar-brand {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.4px;
 }
+nav .container .navbar-toggler {
+  background-color: #cccccc;
+}
 nav .container .navbar-nav a {
   color: #cccccc;
 }
 nav .container .navbar-nav a:hover {
   color: #fff;
+}
+nav .container .navbar-nav .contact-btn-for-mobile {
+  border: none;
+  border-radius: 3px;
+  font-size: 0.89rem;
+  outline: none;
+  letter-spacing: 0.3px;
+  -webkit-backdrop-filter: blur(19px);
+  backdrop-filter: blur(19px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+}
+@media (max-width: 991.98px) {
+  nav .container .navbar-nav .contact-btn-for-mobile {
+    display: block;
+    width: 30%;
+  }
 }
 nav .container .contact {
   background: transparent;
@@ -12000,10 +12061,15 @@ nav .container .contact {
 nav .container .contact:hover {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   transition: all 0.13s ease-in;
-  transition: all 0.3s ease-in;
+}
+@media (max-width: 991.98px) {
+  nav .container .contact {
+    display: none;
+  }
 }
 
 body {
+  font-family: sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.9)), url("/images/food.jpg");
   background-size: cover;
   background-repeat: no-repeat;

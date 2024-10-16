@@ -26,6 +26,7 @@
 
 .cta-two:hover {
     @include buttonHover;
+    transition: all .7s ease-in;
 }
 
 .cta-one {

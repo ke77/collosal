@@ -14,16 +14,32 @@ nav {
             letter-spacing: .4px;
         }
 
+        .navbar-toggler {
+            background-color: #cccccc;
+        }
+
         
         .navbar-nav {
             a {
                 color: #cccccc;
             }
 
+
             a:hover {
                 color: $c--primary;
             }
+
+
+            .contact-btn-for-mobile {
+                @include buttonStyling;
+                @include blur;
+                @include media-breakpoint-down(lg) {
+                    display: block;
+                    width: 30%;
+                }
+            }
         }
+
 
         .contact {
             background: transparent;
@@ -34,11 +50,15 @@ nav {
 
             &:hover {
                 @include buttonHover;
-                transition: all .3s ease-in;
             }
 
-            
+            @include media-breakpoint-down(lg) {
+                display: none;
+
+            }
         }
+
+        
     }
 }
     
