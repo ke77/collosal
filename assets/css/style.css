@@ -11932,7 +11932,6 @@ main .container .services {
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
-  border: 2px solid yellow;
 }
 main .container .services .service-box {
   width: 31%;
@@ -11952,7 +11951,7 @@ main .container .services .service-box {
   main .container .services .service-box {
     width: 100%;
     margin-bottom: 2rem;
-    margin: 0 auto 2rem 0;
+    margin: 0 auto 2rem;
   }
 }
 main .container .services .service-box .icon {
