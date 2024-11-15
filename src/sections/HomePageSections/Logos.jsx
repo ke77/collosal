@@ -8,7 +8,7 @@ import facebook from '/images/company_logos/facebook.svg'
 
 const LogosSection = () => {
     return (
-        <section className='max-w-5xl mx-auto mt-16 border-t border-b border-gray-700 py-2'>
+        <section className='max-w-5xl mx-auto mt-14 border-t border-b border-gray-700 py-2'>
             <div className="w-3/4  mx-auto flex justify-between py-2 px-3">
                 <img src={github} />
                 <img src={forbes} />

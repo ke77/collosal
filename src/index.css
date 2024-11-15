@@ -6,7 +6,7 @@
 
 
 .main-layout {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../public/images/bgImage.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../public/images/bgImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
