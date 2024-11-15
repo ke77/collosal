@@ -1,7 +1,8 @@
 import React from 'react'
-import HeroSection from '../sections/HomePageSections/HeroSection'
-import CtaButtonsSection from '../sections/HomePageSections/CtaButtonsSection'
-import FeatureCardsSection from '../sections/HomePageSections/FeatureCardsSection'
+import HeroSection from '../sections/HomePageSections/Hero'
+import CtaButtonsSection from '../sections/HomePageSections/CtaButtons'
+import FeatureCardsSection from '../sections/HomePageSections/FeatureCards'
+import LogosSection from '../sections/HomePageSections/Logos'
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
             <HeroSection />
             <CtaButtonsSection />
             <FeatureCardsSection />
+            <LogosSection />
         </>
     )
 }
