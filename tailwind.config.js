@@ -12,16 +12,20 @@ export default {
       xl: '1440px'
     },
     fontFamily: {
-      dmSans: ['DM Sans'],
+      dmsans: ['DM Sans'],
       sans: ['Noto Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
-      color: {
+      colors: {
         primary: '#6016FC',
         badgeGreen: '#16FCD2',
-        lighterWhite: '#FFFFFF99'
-      }
+        lighterWhite: '#FFFFFF99',
+        purple: '#800080',
+        mazarine: ' #273C76',
+        byzantium: '#702963'
+      },
+
     },
   },
   plugins: [],

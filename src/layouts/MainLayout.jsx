@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 const MainLayout = () => {
     return (
-        <section className='border border-red-600'>
+        <section className='w-screen bg-gray-700 text-white'>
             <Navbar />
             <Outlet /> 
             <Footer />
