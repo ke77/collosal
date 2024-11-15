@@ -4,6 +4,7 @@ import CtaButtonsSection from '../sections/HomePageSections/CtaButtons'
 import FeatureCardsSection from '../sections/HomePageSections/FeatureCards'
 import LogosSection from '../sections/HomePageSections/Logos'
 import HowWeWork from '../sections/HomePageSections/HowWeWork'
+import OurTeam from '../sections/HomePageSections/OurTeam'
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
             <FeatureCardsSection />
             <LogosSection />
             <HowWeWork />
+            <OurTeam />
         </>
     )
 }
