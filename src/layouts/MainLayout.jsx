@@ -7,7 +7,9 @@ import Footer from '../components/Footer'
 
 const MainLayout = () => {
     return (
-        <section className='w-screen bg-gray-700 text-white'>
+        <section className='main-layout relative h-vh text-white font-sans'>
+
+            
             <Navbar />
             <Outlet /> 
             <Footer />
@@ -16,3 +18,6 @@ const MainLayout = () => {
 }
 
 export default MainLayout
+
+
+{/* <div className='absolute inset-0 bg-gradient-to-r from-black to-black opacity-70 border'> </div>*/}

@@ -16,6 +16,9 @@ export default {
       sans: ['Noto Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    // fontSize: {
+    //   base: '14px' //
+    // },
     extend: {
       colors: {
         primary: '#6016FC',
@@ -25,7 +28,9 @@ export default {
         mazarine: ' #273C76',
         byzantium: '#702963'
       },
-
+      backgroundImage: {
+        'image': "url('/images/bgImage.jpg)",
+      }
     },
   },
   plugins: [],

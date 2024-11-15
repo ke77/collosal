@@ -1,22 +1,19 @@
 import React from 'react'
-import logo from '../../public/images/logo.svg'
+import logo from '/images/logo.svg'
 import { HashLink as Link } from 'react-router-hash-link'
 import { PrimaryButton, SecondaryButton } from './Buttons'
 // import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
-    const buttonStyling = {
-        fontSize: '14px'
-    }
-
 
     return (
-        <nav className='border-3 pt-10'>
+        <nav className='border-3 pt-8'>
             <div className='max-w-5xl mx-auto h-10 flex items-center justify-between'>
                 <div className="logo">
-                    <Link className='font-dmsans font-bold text-xl'>
-                        <img src={logo} className='w-[23px] inline' /> Collosal.
+                    <Link to='./index.html' className='font-dmsans font-bold text-xl'>
+                        <img src={logo} className='w-[21px] inline mr-3' /> 
+                        <h2 className='inline'>Collosal.</h2>
                     </Link>
                 </div>
 
@@ -29,11 +26,11 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <SecondaryButton text={'Contact'} additionalStyles={buttonStyling} />
+                    <SecondaryButton text={'Contact'} additionalStyles={{fontSize: '14px'}} />
                 </div>
 
 
-                {/* hamburher section */}
+                {/* hamburger section */}
                 <div className="sm:hidden">
                     
                 </div>
