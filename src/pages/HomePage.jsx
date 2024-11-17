@@ -7,6 +7,7 @@ import HowWeWork from '../sections/HomePageSections/HowWeWork'
 import OurTeam from '../sections/HomePageSections/OurTeam'
 import Projects from '../sections/HomePageSections/Projects'
 import Services from '../sections/HomePageSections/Services'
+import Testimonials from '../sections/HomePageSections/Testimonials'
 
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
             <OurTeam />
             <Projects />
             <Services />
+            <Testimonials />
         </>
     )
 }
