@@ -24,15 +24,26 @@ export default {
         primary: '#6016FC',
         badgeGreen: '#16FCD2',
         lighterWhite: '#FFFFFF99',
-        purple: '#800080',
-        mazarine: ' #273C76',
-        byzantium: '#702963'
+        purple: '#3F2379',
+        mazarine: '#273C76',
+        byzantium: '#792366',
+
       },
-      backgroundImage: {
-        'image': "url('/images/bgImage.jpg)",
-      }
+      // backgroundImage: {
+      //   'image': "url('/images/bgImage.jpg)",
+      // }
     },
   },
+  safelist: [
+    "bg-purple",
+    "bg-mazarine",
+    "bg-byzantium",
+    "text-purple",
+    "text-mazarine",
+    "text-byzantium",
+    { pattern: /bg-\[#.+\]/ },
+    // { pattern: /text-\[#.+\]/ },
+  ],
   plugins: [],
 }
 

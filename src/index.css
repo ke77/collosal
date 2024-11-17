@@ -6,9 +6,11 @@
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../../public/images/bgImage.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/bgImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* background-color: #792366; */
 }

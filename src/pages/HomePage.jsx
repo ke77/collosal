@@ -6,6 +6,7 @@ import LogosSection from '../sections/HomePageSections/Logos'
 import HowWeWork from '../sections/HomePageSections/HowWeWork'
 import OurTeam from '../sections/HomePageSections/OurTeam'
 import Projects from '../sections/HomePageSections/Projects'
+import Services from '../sections/HomePageSections/Services'
 
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
             <HowWeWork />
             <OurTeam />
             <Projects />
+            <Services />
         </>
     )
 }
