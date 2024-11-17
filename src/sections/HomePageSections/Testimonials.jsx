@@ -59,7 +59,7 @@ const Testimonials = () => {
 
     return (
         <section className='flex flex-col justify-center items-center text-center max-w-[70rem] h-[40em] mx-auto mt-28 sm:space-y-36'>
-            <div className="text h-[15%]">
+            <div className="text h-[15%] space-y-2">
                 <h2 className='text-badgeGreen text-sm'>TESTIMONIAL</h2>
                 <h1 className='font-bold text-3xl leading-snug max-w-lg mx-auto'>What do our clients say that we never let down?</h1>
             </div>

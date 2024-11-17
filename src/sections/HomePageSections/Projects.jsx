@@ -3,7 +3,7 @@ import ScreenIllustrations from '../../components/ScreenIllustrations'
 
 const Projects = () => {
     return (
-        <section className='flex flex-col justify-between max-w-5xl mx-auto mt-28 text-center space-y-12 px-8 h-[800px]'>
+        <section className='flex flex-col justify-between max-w-5xl mx-auto mt-24 text-center space-y-12 px-8 pt-24 h-[800px] border-t border-t-[#FFFFFF2A]'>
             <div className="text h-[25%] space-y-2">
                 <h2 className='text-badgeGreen text-sm'>PROJECTS</h2>
 
@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="illustrations h-[75%]">
                 <ScreenIllustrations />
             </div>
-        </section>
+        </section>        
     )
 }
 
