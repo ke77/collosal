@@ -20,4 +20,3 @@ const MainLayout = () => {
 export default MainLayout
 
 
-{/* <div className='absolute inset-0 bg-gradient-to-r from-black to-black opacity-70 border'> </div>*/}
