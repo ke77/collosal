@@ -8,13 +8,13 @@ import facebook from '/images/company_logos/facebook.svg'
 
 const LogosSection = () => {
     return (
-        <section className='max-w-5xl mx-auto mt-14 border-t border-b border-gray-700 py-2'>
-            <div className="w-3/4  mx-auto flex justify-between py-2 px-3">
-                <img src={github} />
-                <img src={forbes} />
-                <img src={google} />
-                <img src={microsoft} />
-                <img src={facebook} />
+        <section className='sm:w-[95%] md:max-w-5xl mx-auto mt-32 md:mt-20 border-t border-b border-[#FFFFFF2A] py-20 sm:py-12 md:py-4'>
+            <div className="w-[35%] sm:w-[100%] md:w-3/4 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 sm:gap-8 md:gap-x-12 place-items-center py-2 px-3 lg:px-0">
+                <img src={github} alt='github logo' />
+                <img src={forbes} alt='forbes logo' />
+                <img src={google} alt='google logo' />
+                <img src={microsoft} alt='microsoft logo' />
+                <img src={facebook} alt='facebook logo' />
             </div>
         </section>
     )

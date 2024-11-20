@@ -5,8 +5,8 @@ import { HashLink as Link } from 'react-router-hash-link/dist/react-router-hash-
 
 const ServiceCard = ({name, price, platform, structure, revisions, pricePerAddition, bgColor}) => {
     return (
-        <div className={`card w-1/3 h-full flex flex-col justify-end items-center rounded-[10px] bg-${bgColor}`}>
-            <div className="card-content w-[70%] h-[85%] space-y-8">
+        <div className={`card sm:w-[90%] md:w-1/3 h-full flex flex-col justify-end items-center rounded-[10px] lg:pb-14 bg-${bgColor}`}>
+            <div className="card-content w-[75%] h-[85%] py-12 sm:py-14 md:py-0 space-y-12 md:space-y-9">
                 <div className="top-section flex justify-between">
                     <div className="name">
                         <h2 className='text-sm font-semibold'>{name}</h2>
@@ -17,16 +17,16 @@ const ServiceCard = ({name, price, platform, structure, revisions, pricePerAddit
                     </div>
                 </div>
 
-                <div className="description pt-4 space-y-3">
-                    <p className='text-sm'>{platform}</p>
-                    <p className='text-sm'>{structure}</p>
-                    <p className='text-sm'>{revisions}</p>
-                    <p className='text-sm'>{pricePerAddition}</p>
+                <div className="description pt-8 sm:pt-4 space-y-4 md:space-y-3">
+                    <p className='text-sm md:text-sm sm:text-base'>{platform}</p>
+                    <p className='text-sm md:text-sm sm:text-base'>{structure}</p>
+                    <p className='text-sm md:text-sm sm:text-base'>{revisions}</p>
+                    <p className='text-sm md:text-sm sm:text-base'>{pricePerAddition}</p>
                 </div>
 
                 <div>
                     <Link>
-                        <button type="button" className={`w-full py-2 border bg-white text-sm rounded text-${bgColor}`}>Detail</button>
+                        <button type="button" className={`w-full py-2 border bg-white text-sm  sm:text-lg md:text-base rounded text-${bgColor} hover:bg-[#f0f0f0] duration-200`}>Detail</button>
                     </Link>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const ServiceCards = () => {
     ];
 
     return (
-        <div className='flex flex-col sm:flex-row h-full space-x-5 space-y-5 sm:space-y-0'>
+        <div className='flex flex-col sm:items-center sm:w-[100%] lg:flex-row h-full md:space-x-5 space-y-12 sm:space-y-16 md:space-y-0'>
             {cardData.map((card, index) => (
                 <ServiceCard 
                     key={index} 

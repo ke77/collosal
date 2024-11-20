@@ -5,12 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
+    // screens: {
+    //   // sm: '480px',
+    //   md: '640px',
+      // //md: '768px',
+      // lg: '1020px',
+    //   //lg: '976px',
+      // //xl: '1440px'
+      // xl: '1279px'
+    // },
     fontFamily: {
       dmsans: ['DM Sans'],
       sans: ['Noto Sans', 'sans-serif'],

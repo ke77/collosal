@@ -3,8 +3,7 @@ import FeatureCard from '../../components/FeatureCard'
 import { FaFigma } from 'react-icons/fa6'
 import { FaCode } from 'react-icons/fa'
 import { FiBox } from 'react-icons/fi'
-// import box from '/images/icons/box.png'
-// import { FaFigma } from 'react-icons/fa/fab'
+
 
 
 const FeatureCardsSection = () => {
@@ -31,13 +30,10 @@ const FeatureCardsSection = () => {
     ]
 
     return (
-        <section className='sm:max-w-5xl mx-auto flex flex-col sm:flex-row justify-between space-x-6 mt-20 '>
+        <section className='w-[85%] sm:w-[70%] md:w-[100%] md:max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-stretch justify-between md:space-x-6 space-y-16 md:space-y-0 mt-32 md:mt-20'>
             {cardData.map((card, key) => (
                 <FeatureCard key={key} title={card.title} description={card.description} Icon={card.icon} />
             ))}
-            {/* <FeatureCard title={cardData[0].title} description={cardData[0].description} icon=<FaFigma/> />
-            <FeatureCard title={cardData[1].title} description={cardData[1].description} icon=<FaCode/> />
-            <FeatureCard title={cardData[2].title} description={cardData[2].description} icon=<FiBox/> /> */}
         </section>
     )
 }

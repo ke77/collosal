@@ -4,7 +4,7 @@ import quoteBadge from '/images/testimonials/Quote_Badge.png'
 
 const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) => {
     return (
-        <div className={`testimonial w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF1A] rounded ${specialStyling}`}>
+        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-14 lg:py-8 space-y-9 md:space-y-11 ${specialStyling}`}>
             <div className="details-box flex flex-col items-center justify-around w-[50%] h-[42%]">
                 <div className="image-container relative">
                     <img src={avatarSrc} alt={name} />
@@ -12,13 +12,13 @@ const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) =
                 </div>
 
                 <div className='space-y-1'>
-                    <h1 className='text-sm'>{name}</h1>
-                    <h2 className='text-[13px] text-lighterWhite'>{company}</h2>
+                    <h1 className='text-sm sm:text-base'>{name}</h1>
+                    <h2 className='text-sm sm:text-base md:text-[13px] text-lighterWhite'>{company}</h2>
                 </div>
             </div>
 
             <div className="quote-box flex items-center w-[75%] h-[28%]">
-                <p className={`text-[13px] leading-8 ${id === 2 ? 'text-white' : 'text-lighterWhite'}`}>{quote}</p>
+                <p className={`md:text-[13px] leading-8 md:leading-7 ${id === 2 ? 'text-white' : 'text-lighterWhite'}`}>{quote}</p>
             </div>
         </div>
     )
@@ -44,7 +44,7 @@ const Testimonials = () => {
             name: 'Esther Howard',
             company: 'Abstergo Ltd.',
             quote: '"Your company is truly upstanding and is behind its product 100%. It\'s the perfect solution for our business. It has really helped our business."',
-            specialStyling: 'border-[1.8px] border-primary relative -top-[3.2em]'
+            specialStyling: 'border-[1.8px] border-primary relative lg:-top-[3.2em]'
         },
         {
             id: 3,
@@ -58,13 +58,13 @@ const Testimonials = () => {
 
 
     return (
-        <section className='flex flex-col justify-center items-center text-center max-w-[70rem] h-[40em] mx-auto mt-28 sm:space-y-36'>
-            <div className="text h-[15%] space-y-2">
+        <section className='flex flex-col justify-evenly items-center text-center w-[85%] sm:w-[80%] md:w-[85%] max-w-[70rem] md:h-[40em] lg:h-auto mx-auto mt-28 space-y-24 md:space-y-36'>
+            <div className="text h-[15%] space-y-4 sm:space-y-2">
                 <h2 className='text-badgeGreen text-sm'>TESTIMONIAL</h2>
-                <h1 className='font-bold text-3xl leading-snug max-w-lg mx-auto'>What do our clients say that we never let down?</h1>
+                <h1 className='font-bold text-3xl leading-normal sm:leading-snug max-w-lg mx-auto'>What do our clients say that we never let down?</h1>
             </div>
 
-            <div className="cards-container flex flex-col sm:flex-row h-[60%] space-y-4 sm:space-y-0 sm:space-x-8">
+            <div className="cards-container flex flex-col md:flex-row sm:items-center lg:items-stretch sm:w-[90%] md:w-[100%] h-[60%] space-y-16 sm:space-y-20 md:space-y-0 md:space-x-8">
                 {
                     testimonialData.map((testimonialCard) => (
                         <Testimonial 
