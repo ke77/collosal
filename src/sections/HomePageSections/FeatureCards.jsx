@@ -30,7 +30,7 @@ const FeatureCardsSection = () => {
     ]
 
     return (
-        <section className='w-[85%] sm:w-[70%] md:w-[100%] md:max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-stretch justify-between md:space-x-6 space-y-16 md:space-y-0 mt-32 md:mt-20'>
+        <section className='w-[85%] sm:w-[70%] md:w-[100%] md:max-w-4xl lg:max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-stretch justify-between md:space-x-6 space-y-16 md:space-y-0 mt-32 md:mt-20'>
             {cardData.map((card, key) => (
                 <FeatureCard key={key} title={card.title} description={card.description} Icon={card.icon} />
             ))}

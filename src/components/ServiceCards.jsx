@@ -69,7 +69,7 @@ const ServiceCards = () => {
     ];
 
     return (
-        <div className='flex flex-col sm:items-center sm:w-[100%] lg:flex-row h-full md:space-x-5 space-y-12 sm:space-y-16 md:space-y-0'>
+        <div className='flex flex-col sm:items-center sm:w-[100%] md:flex-row h-full md:space-x-5 space-y-12 sm:space-y-16 md:space-y-0'>
             {cardData.map((card, index) => (
                 <ServiceCard 
                     key={index} 
