@@ -1,7 +1,9 @@
 import React from 'react'
 import logo from '/images/logo.svg'
 // import { HashLink as Link } from 'react-router-hash-link'
-import { HashLink } from 'react-router-hash-link'
+// @ts-ignore
+import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production'
+// import { Link } from 'react-scroll'
 import { PrimaryButton, SecondaryButton } from './Buttons'
 import { FaHamburger }  from 'react-icons/fa'
 // import { NavLink } from 'react-router-dom'

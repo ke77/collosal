@@ -6,7 +6,7 @@ import ourTeamIllustration from '/images/illustrations/Team_Illustration.svg'
 
 const OurTeam = () => {
     return (
-        <section className='flex flex-col md:flex-row items-center md:max-w-4xl lg:max-w-5xl mx-auto mt-32 md:mt-24 px-3 space-y-20 md:space-y-0'>
+        <section id='about' className='flex flex-col md:flex-row items-center md:max-w-4xl lg:max-w-5xl mx-auto mt-32 md:mt-24 px-3 space-y-20 md:space-y-0'>
             <div className="text flex flex-col items-center sm:items-start w-[100%] sm:w-[80%] md:w-1/2 space-y-4 sm:space-y-3 md:space-y-2">
                 <h2 className='text-badgeGreen text-sm'>OUR TEAM</h2>
 

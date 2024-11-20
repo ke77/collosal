@@ -4,7 +4,7 @@ import illustration from '/images/illustrations/How_We_Work_Illustration.svg'
 
 const HowWeWork = () => {
     return (
-        <section id='#how-we-work' className='flex flex-col md:flex-row items-center max-w-5xl sm:w-[80%] mx-auto mt-24 space-y-12 sm:space-y-10 md:space-y-0'>
+        <section id='how-we-work' className='flex flex-col md:flex-row items-center max-w-5xl sm:w-[80%] mx-auto mt-24 space-y-12 sm:space-y-10 md:space-y-0'>
             <div className="illustration md:w-1/2">
                 <img src={illustration} alt='how we work' className='-ml-6' />
             </div>
