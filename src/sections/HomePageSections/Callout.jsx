@@ -9,7 +9,7 @@ const Callout = () => {
                 <h1 className='font-bold text-3xl leading-normal sm:leading-snug lg:leading-normal max-w-lg lg:text-left'>We've prepared everything, it's time for you to tell the problem</h1>
             </div>
 
-            <div className="buttons flex flex-col sm:flex-col md:flex-row justify-between w-[80%] sm:w-[70%] border md:w-[33%] space-y-4 md:space-y-0">
+            <div className="buttons flex flex-col sm:flex-col md:flex-row justify-between w-[80%] sm:w-[70%] md:w-[33%] space-y-4 md:space-y-0">
                 <PrimaryButton text={'Send Quote'} additionalStyles={`md:w-[53%] h-[48px]`} />
                 <SecondaryButton text={'Ask Us'} additionalStyles={`md:w-[43%] h-[48px]`} />
             </div>
