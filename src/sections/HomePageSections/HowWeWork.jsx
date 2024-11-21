@@ -6,7 +6,7 @@ const HowWeWork = () => {
     return (
         <section id='how-we-work' className='flex flex-col md:flex-row items-center max-w-5xl sm:w-[80%] mx-auto mt-24 space-y-12 sm:space-y-10 md:space-y-0'>
             <div className="illustration md:w-1/2">
-                <img src={illustration} alt='how we work' className='-ml-6' />
+                <img src={illustration} alt='how we work' className='md:-ml-6' />
             </div>
 
             <div className="text flex flex-col items-center sm:items-start md:items-st w-[100%] md:w-1/2 space-y-5 md:space-y-3">
