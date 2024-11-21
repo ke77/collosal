@@ -4,8 +4,8 @@ import quoteBadge from '/images/testimonials/Quote_Badge.png'
 
 const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) => {
     return (
-        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-14 lg:py-8 space-y-9 md:space-y-11 ${specialStyling}`}>
-            <div className="details-box flex flex-col items-center justify-around w-[50%] h-[42%]">
+        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-12 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
+            <div className="details-box flex flex-col items-center space-y-6 sm:space-y-0 w-[50%] h-[42%]">
                 <div className="image-container relative">
                     <img src={avatarSrc} alt={name} />
                     <img src={quoteBadge} alt="quote badge icon" className='absolute left-[3.9em] bottom-[.7px]' />
