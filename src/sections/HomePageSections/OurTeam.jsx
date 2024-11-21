@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production'
-import { SecondaryButton } from '../../components/Buttons'
+import { SecondaryButton } from '../../components/Buttons';
 import ourTeamIllustration from '/images/illustrations/Team_Illustration.svg';
 
 
