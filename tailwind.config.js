@@ -36,8 +36,6 @@ export default {
     "text-mazarine",
     "text-byzantium",
     "text-lighterWhite",
-    // { pattern: /bg-\[#.+\]/ },
-    // { pattern: /text-\[#.+\]/ },
   ],
   plugins: [],
 }
