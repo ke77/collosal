@@ -8,10 +8,8 @@ import { FaHamburger }  from 'react-icons/fa'
 
 const Navbar = () => {
     const [navMenuOpen, setNavMenuOpen] = useState(false);
-
-    const linkClass = ({isActive}) => isActive ? 'text-white hover:text-white hover:transition-all duration-300' : 'text-lighterWhite hover:text-white hover:transition-all duration-300';
-
 ;
+
     return (
         <nav className='pt-8'>
             <div className='w-[84%] md:w-[90%] md:max-w-4xl lg:max-w-5xl mx-auto h-10 flex items-center justify-between z-1000'>
@@ -24,10 +22,10 @@ const Navbar = () => {
 
                 {/* nav links */}
                 <div className='hidden md:flex h-full items-center space-x-10 font-sans text-sm'>
-                    <HashLink smooth to="#services" className={linkClass}>Services</HashLink>
-                    <HashLink smooth to="#how-we-work" className={linkClass}>How We Work</HashLink>
-                    <HashLink smooth to="#projects" className={linkClass}>Projects</HashLink>
-                    <HashLink smooth to="#about" className={linkClass}>About</HashLink>
+                    <HashLink smooth to="#services" className='text-lighterWhite hover:text-white hover:transition-all duration-300'>Services</HashLink>
+                    <HashLink smooth to="#how-we-work" className='text-lighterWhite hover:text-white hover:transition-all duration-300'>How We Work</HashLink>
+                    <HashLink smooth to="#projects" className='text-lighterWhite hover:text-white hover:transition-all duration-300'>Projects</HashLink>
+                    <HashLink smooth to="#about" className='text-lighterWhite hover:text-white hover:transition-all duration-300'>About</HashLink>
                 </div>
 
                 <div className='hidden md:block'>
