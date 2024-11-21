@@ -7,21 +7,15 @@ export default {
   theme: {
     screens: {
       sm: '480px',
-    //   md: '640px',
       md: '768px',
-      // lg: '1020px',
       lg: '976px',
       xl: '1440px'
-      // xl: '1279px'
     },
     fontFamily: {
       dmsans: ['DM Sans'],
       sans: ['Noto Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    // fontSize: {
-    //   base: '14px' //
-    // },
     extend: {
       colors: {
         primary: '#6016FC',
@@ -32,9 +26,6 @@ export default {
         byzantium: '#792366',
 
       },
-      // backgroundImage: {
-      //   'image': "url('/images/bgImage.jpg)",
-      // }
     },
   },
   safelist: [
