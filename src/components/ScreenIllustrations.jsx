@@ -21,7 +21,7 @@ const ProjectCardMobile = ({mobileOrder}) => {
                 </div>
             </div>
 
-            <div className="details flex flex-col justify-end h-[26%] space-y-6 sm:space-y-5">
+            <div className="details flex flex-col justify-end h-[26%] space-y-4 sm:space-y-5">
                 <h2 className='sm:text-base md:text-sm'>The Mobile App Landing Page</h2>
 
                 <h3 className='sm:text-base md:text-sm text-lighterWhite'>A landing page for mobile app</h3>
@@ -50,7 +50,7 @@ const ProjectCardDesktop = ({desktopOrder}) => {
                 </div>
             </div>
 
-            <div className="details flex flex-col justify-end h-[26%] space-y-6 sm:space-y-5">
+            <div className="details flex flex-col justify-end h-[26%] space-y-4 sm:space-y-5">
                 <h2 className='sm:text-base md:text-sm'>The Desktop App Landing Page</h2>
 
                 <h3 className='sm:text-base md:text-sm text-lighterWhite'>A landing page for desktop app</h3>

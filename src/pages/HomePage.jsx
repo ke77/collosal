@@ -13,7 +13,7 @@ import Callout from '../sections/HomePageSections/Callout'
 
 const HomePage = () => {
     return (
-        <>
+        <section>
             <HeroSection />
             <CtaButtonsSection />
             <FeatureCardsSection />
@@ -24,7 +24,7 @@ const HomePage = () => {
             <Services />
             <Testimonials />
             <Callout />
-        </>
+        </section>
     )
 }
 

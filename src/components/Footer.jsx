@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import footerLogo from '/images/footer_logo.svg'
 
+
 const Footer = () => {
     return (
         <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-y-10 max-w-5xl sm:w-[95%] md:h-[16em] mx-auto mt-32 sm:mt-24 space-y-16 sm:space-y-0 md:space-x-4 pb-20 sm:pb-16'>
