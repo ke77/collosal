@@ -6,8 +6,8 @@ import footerLogo from '/images/footer_logo.svg'
 const Footer = () => {
     return (
         <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-y-10 max-w-5xl sm:w-[95%] md:h-[16em] mx-auto mt-32 sm:mt-24 space-y-16 sm:space-y-0 md:space-x-4 pb-20 sm:pb-16'>
-            <div className="brand_copyright md:flex md:items-start">
-                <div className='md:text-start'>
+            <div className="brand_copyright lg:flex lg:items-start">
+                <div className='lg:text-start'>
                     <img src={footerLogo} alt="logo" className='inline-block' />
                     <h1 className='inline-block align-middle ml-3 font-dmsans font-bold text-2xl md:text-xl'>Collosal.</h1>
 
@@ -16,9 +16,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="space-y-5 md:flex md:flex-col md:items-start">
+            <div className="space-y-5 lg:flex lg:flex-col lg:items-start">
                 <h2 className='text-lg md:text-sm'>SERVICES</h2>
-                <div className='flex flex-col md:items-start space-y-3 sm:space-y-2'>
+                <div className='flex flex-col lg:items-start space-y-3 sm:space-y-2'>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Web Development</Link>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>App Development</Link>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Ui Design</Link>
@@ -27,9 +27,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="space-y-5 md:flex md:flex-col md:items-start">
+            <div className="space-y-5 lg:flex lg:flex-col lg:items-start">
                 <h2 className='text-lg md:text-sm'>COMPANY</h2>
-                <div className='flex flex-col md:items-start space-y-3 sm:space-y-2'>
+                <div className='flex flex-col lg:items-start space-y-3 sm:space-y-2'>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>About</Link>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Contact</Link>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Send Quote</Link>
@@ -39,9 +39,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="space-y-5 md:flex md:flex-col md:items-start">
+            <div className="space-y-5 lg:flex lg:flex-col lg:items-start">
                 <h2 className='text-lg md:text-sm'>RESOURCES</h2>
-                <div className='flex flex-col md:items-start space-y-3 sm:space-y-2'>
+                <div className='flex flex-col lg:items-start space-y-3 sm:space-y-2'>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Support</Link>
                     <Link to='' className='text-lighterWhite md:text-sm hover:text-white hover:transition-all duration-300'>Documentation</Link>
                     <Link to='' className='text-lighterWhite ,md:text-sm hover:text-white hover:transition-all duration-300'>License</Link>
