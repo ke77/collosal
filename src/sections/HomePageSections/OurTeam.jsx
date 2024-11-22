@@ -10,7 +10,7 @@ const OurTeam = () => {
             <div className="text flex flex-col items-center md:items-start w-[100%] sm:w-[80%] md:w-1/2 space-y-4 sm:space-y-3 md:space-y-2">
                 <h2 className='text-badgeGreen text-sm'>OUR TEAM</h2>
 
-                <h1 className='font-bold text-3xl leading-normal sm:leading-snug md:text-start'>We're a team of designers, engineers and analysts</h1>
+                <h1 className='font-bold text-3xl leading-normal sm:leading-snug md:text-start md:pt-2'>We're a team of designers, engineers and analysts</h1>
 
                 <p className='md:text-sm text-lighterWhite leading-loose md:leading-8 sm:leading-loose w-[95%] md:max-w-md pt-6 md:text-start'>Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results.</p>
 

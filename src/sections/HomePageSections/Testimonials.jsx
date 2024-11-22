@@ -2,10 +2,11 @@ import React from 'react'
 import quoteBadge from '/images/testimonials/Quote_Badge.png'
 
 
+
 const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) => {
     return (
-        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-12 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
-            <div className="details-box flex flex-col items-center space-y-6 sm:space-y-0 w-[50%] h-[42%]">
+        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-7 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
+            <div className="details-box flex flex-col items-center space-y-4 sm:space-y-0 w-[50%] h-[42%]">
                 <div className="image-container relative">
                     <img src={avatarSrc} alt={name} />
                     <img src={quoteBadge} alt="quote badge icon" className='absolute left-[3.9em] bottom-[.7px]' />
@@ -17,7 +18,7 @@ const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) =
                 </div>
             </div>
 
-            <div className="quote-box flex items-center w-[75%] h-[28%]">
+            <div className="quote-box flex items-center w-[85%] md:w-[75%] h-[28%]">
                 <p className={`md:text-[13px] leading-8 md:leading-7 ${id === 2 ? 'text-white' : 'text-lighterWhite'}`}>{quote}</p>
             </div>
         </div>
@@ -58,8 +59,8 @@ const Testimonials = () => {
 
 
     return (
-        <section className='flex flex-col justify-evenly items-center text-center w-[85%] sm:w-[80%] md:w-[85%] max-w-[70rem] md:h-[40em] lg:h-auto mx-auto mt-28 space-y-24 md:space-y-36'>
-            <div className="text h-[15%] space-y-4 sm:space-y-2">
+        <section className='relative flex flex-col justify-evenly items-center text-center w-[85%] sm:w-[80%] md:w-[85%] max-w-[70rem] md:h-[40em] lg:h-auto mx-auto mt-32 space-y-24 md:space-y-36'>
+            <div className="text h-[15%] space-y-4">
                 <h2 className='text-badgeGreen text-sm'>TESTIMONIAL</h2>
                 <h1 className='font-bold text-3xl leading-normal sm:leading-snug max-w-lg mx-auto'>What do our clients say that we never let down?</h1>
             </div>
