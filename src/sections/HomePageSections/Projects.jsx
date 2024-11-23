@@ -26,6 +26,7 @@ const Projects = () => {
             </div>
 
             <div className="illustrations mx-auto w-[95%] sm:w-[85%] h-[75%]">
+                
                 <ScreenIllustrations />
             </div>
         </section>        

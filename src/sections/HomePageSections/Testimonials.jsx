@@ -1,11 +1,12 @@
 import React from 'react'
 import quoteBadge from '/images/testimonials/Quote_Badge.png'
+import { Zoom } from 'react-awesome-reveal'
 
 
 
 const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) => {
     return (
-        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-7 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
+        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-9 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
             <div className="details-box flex flex-col items-center space-y-4 sm:space-y-0 w-[50%] h-[42%]">
                 <div className="image-container relative">
                     <img src={avatarSrc} alt={name} />
@@ -66,19 +67,21 @@ const Testimonials = () => {
             </div>
 
             <div className="cards-container flex flex-col md:flex-row sm:items-center lg:items-stretch sm:w-[90%] md:w-[100%] h-[60%] space-y-16 sm:space-y-20 md:space-y-0 md:space-x-8">
-                {
-                    testimonialData.map((testimonialCard) => (
-                        <Testimonial 
-                            key={testimonialCard.id}
-                            id={testimonialCard.id} 
-                            avatarSrc={testimonialCard.avatarSrc}
-                            name={testimonialCard.name}
-                            company={testimonialCard.company}
-                            quote={testimonialCard.quote}
-                            specialStyling={testimonialCard.specialStyling}
-                        />
-                    ))
-                }
+                <Zoom>
+                    {
+                        testimonialData.map((testimonialCard) => (
+                            <Testimonial 
+                                key={testimonialCard.id}
+                                id={testimonialCard.id} 
+                                avatarSrc={testimonialCard.avatarSrc}
+                                name={testimonialCard.name}
+                                company={testimonialCard.company}
+                                quote={testimonialCard.quote}
+                                specialStyling={testimonialCard.specialStyling}
+                            />
+                        ))
+                    }
+                </Zoom>
             </div>
 
             {/* <div className="carousel-indicator">
