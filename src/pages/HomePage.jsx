@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../sections/HomePageSections/Hero'
-import CtaButtonsSection from '../sections/HomePageSections/CtaButtons'
-import FeatureCardsSection from '../sections/HomePageSections/FeatureCards'
+import CtaButtons from '../sections/HomePageSections/CtaButtons'
+import FeatureCards from '../sections/HomePageSections/FeatureCards'
 import LogosSection from '../sections/HomePageSections/Logos'
 import HowWeWork from '../sections/HomePageSections/HowWeWork'
 import OurTeam from '../sections/HomePageSections/OurTeam'
@@ -15,8 +15,8 @@ const HomePage = () => {
     return (
         <section>
             <HeroSection />
-            <CtaButtonsSection />
-            <FeatureCardsSection />
+            <CtaButtons />
+            <FeatureCards />
             <LogosSection />
             <HowWeWork />
             <OurTeam />

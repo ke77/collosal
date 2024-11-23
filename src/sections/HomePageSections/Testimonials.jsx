@@ -1,6 +1,5 @@
 import React from 'react'
 import quoteBadge from '/images/testimonials/Quote_Badge.png'
-import { Zoom } from 'react-awesome-reveal'
 
 
 
@@ -67,21 +66,19 @@ const Testimonials = () => {
             </div>
 
             <div className="cards-container flex flex-col md:flex-row sm:items-center lg:items-stretch sm:w-[90%] md:w-[100%] h-[60%] space-y-16 sm:space-y-20 md:space-y-0 md:space-x-8">
-                <Zoom>
-                    {
-                        testimonialData.map((testimonialCard) => (
-                            <Testimonial 
-                                key={testimonialCard.id}
-                                id={testimonialCard.id} 
-                                avatarSrc={testimonialCard.avatarSrc}
-                                name={testimonialCard.name}
-                                company={testimonialCard.company}
-                                quote={testimonialCard.quote}
-                                specialStyling={testimonialCard.specialStyling}
-                            />
-                        ))
-                    }
-                </Zoom>
+                {
+                    testimonialData.map((testimonialCard) => (
+                        <Testimonial 
+                            key={testimonialCard.id}
+                            id={testimonialCard.id} 
+                            avatarSrc={testimonialCard.avatarSrc}
+                            name={testimonialCard.name}
+                            company={testimonialCard.company}
+                            quote={testimonialCard.quote}
+                            specialStyling={testimonialCard.specialStyling}
+                        />
+                    ))
+                }
             </div>
 
             {/* <div className="carousel-indicator">
