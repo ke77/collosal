@@ -5,7 +5,7 @@ import quoteBadge from '/images/testimonials/Quote_Badge.png'
 
 const Testimonial = ({id, avatarSrc, name, company, quote, specialStyling=''}) => {
     return (
-        <div className={`testimonial md:w-1/3 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-9 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
+        <div className={`testimonial md:w-1/2 flex flex-col justify-evenly items-center bg-[#FFFFFF0C] rounded py-9 lg:py-8 space-y-10 md:space-y-11 ${specialStyling}`}>
             <div className="details-box flex flex-col items-center space-y-4 sm:space-y-0 w-[50%] h-[42%]">
                 <div className="image-container relative">
                     <img src={avatarSrc} alt={name} />
@@ -59,13 +59,13 @@ const Testimonials = () => {
 
 
     return (
-        <section className='relative flex flex-col justify-evenly items-center text-center w-[85%] sm:w-[80%] md:w-[85%] max-w-[70rem] md:h-[40em] lg:h-auto mx-auto mt-32 space-y-24 md:space-y-36'>
+        <section className='relative flex flex-col md justify-evenly items-center text-center w-[85%] sm:w-[80%] md:w-[85%] max-w-[70rem] lg:h-auto mx-auto mt-32 space-y-24 md:space-y-36'>
             <div className="text h-[15%] space-y-4">
                 <h2 className='text-badgeGreen text-sm'>TESTIMONIAL</h2>
                 <h1 className='font-bold text-3xl leading-normal sm:leading-snug max-w-lg mx-auto'>What do our clients say that we never let down?</h1>
             </div>
 
-            <div className="cards-container flex flex-col md:flex-row sm:items-center lg:items-stretch sm:w-[90%] md:w-[100%] h-[60%] space-y-16 sm:space-y-20 md:space-y-0 md:space-x-8">
+            <div className="cards-container flex flex-col md:flex-row sm:items-center lg:items-stretch justify-center flex-wrap lg:flex-nowrap sm:w-[90%] md:w-[100%] h-[60%] space-y-16 sm:space-y-20 md:space-y-0 md:space-x-8">
                 {
                     testimonialData.map((testimonialCard) => (
                         <Testimonial 

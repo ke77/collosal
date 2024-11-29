@@ -6,7 +6,7 @@ import { Ellipse1, Ellipse2 } from '../../components/Ellipses'
 const Callout = () => {
     return (
         <>
-            <div className='absolute z-[-100] mt-[190%] md:mt-96 ml-4 md:ml-20 w-16'>
+            <div className='absolute z-[-100] sm:mt-[23%] mt-[190%] md:mt-96 ml-4 md:ml-20 w-16'>
                 <Ellipse2 />
             </div>
 
